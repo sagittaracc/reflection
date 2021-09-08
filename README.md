@@ -12,7 +12,7 @@ class Test
     public function method()
     {
         if (true) {
-            echo 'this is method';
+            echo 'this method';
         }
 
         echo 'never goes here';
