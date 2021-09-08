@@ -11,7 +11,7 @@ class ReflectionClassTest extends TestCase
 
     public function testReflectionClass(): void
     {
-        $reflection = new ReflectionClass(new Test);
+        $reflection = new ReflectionClass(Test::class);
         $method = $reflection->getMethod('method');
 
         $this->assertEquals("if (true) { echo 'this is method'; }  echo 'never goes here';", $method->body);

@@ -21,7 +21,7 @@ class Test
 ```
 
 ```php
-$reflection = new sagittaracc\ReflectionClass(new Test);
+$reflection = new ReflectionClass(Test::class);
 $method = $reflection->getMethod('method');
 echo $method->body; // if (true) { echo 'this is method'; }  echo 'never goes here';
 ```
