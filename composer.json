@@ -1,0 +1,23 @@
+{
+    "name": "sagittaracc/reflection",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "sagittaracc",
+            "email": "sagittaracc@gmail.com"
+        }
+    ],
+    "autoload": {
+        "classmap": [
+            "src/",
+            "tests/classes"
+        ]
+    },
+    "require": {
+        "sagittaracc/strings": "^0.3"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9"
+    }
+}
