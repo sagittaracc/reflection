@@ -12,10 +12,10 @@ class Test
     public function method()
     {
         if (true) {
-            echo 'this method';
+            return 'this method';
         }
 
-        echo 'never goes here';
+        return 'never goes here';
     }
 }
 ```
@@ -23,5 +23,5 @@ class Test
 ```php
 $reflection = new ReflectionClass(Test::class);
 $method = $reflection->getMethod('method');
-echo $method->body; // if (true) { echo 'this method'; }  echo 'never goes here';
+echo $method->body; // if (true) { return 'this method'; }  return 'never goes here';
 ```
