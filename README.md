@@ -1,8 +1,4 @@
-# reflection
-
-This is an extension for `ReflectionClass` which helps you get the body of a class method.
-
-### Example
+### Пример
 
 ```php
 namespace sagittaracc\classes;
